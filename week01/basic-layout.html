@@ -3,22 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agatha Odeh - WDD 131</title>
-    <link rel="stylesheet" href="styles/layout.css">
-     <script src="scripts/main.js" defer></script>
-   
+    <title>WDD 131: Portfolio</title>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
     <header>
+        <div class="top-bar">WDD 131: Dynamic Web Fundamentals</div>
         <nav>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">I-Learn</a>
+            <a href="#">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
-        <h1>Header Content</h1>
     </header>
-    <main>main Content</main> 
-    <footer>Footer Content</footer>
+
+    <h1>Rubia M. Francesco</h1>
+
+    <main class="container">
+        <section class="card">
+            <h2 class="card-header">About Me</h2>
+            <div class="card-content">
+                <div class="bio-top">
+                    <p>My name is Rubia and I go by Ruby... [Your bio text here]</p>
+                    <img src="profile.jpg" alt="Rubia" class="profile-img">
+                </div>
+                
+                <div class="location-section">
+                    <h3>Toloria, Madagascar</h3>
+                    <hr>
+                    <div class="flag-info">
+                        <figure>
+                            <img src="flag.png" alt="Flag of Madagascar">
+                            <figcaption>Official Flag of Madagascar</figcaption>
+                        </figure>
+                        <p>Madagascar is the 4th largest island... [Info text]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="card-header">Web Dev Resources</h2>
+            <div class="card-content">
+                <ul class="resource-list">
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
+        <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,25 +1,97 @@
-body{
-    display: grid;
-    grid-template-rows: auto, auto 1fr, auto;
-    min-height: 100vh;
-    margin: 0;
-    font-size: arial, sans-serif;
+:root {
+    --primary-blue: #1b4d72; /* Dark blue from your image */
+    --accent-blue: #2c3e50;
+    --bg-color: #ffffff;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
 }
-header{
-    background-color: antiquewhite;
-    color:brown;
-    padding: 1rem;
+
+/* Header & Nav */
+.top-bar {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
 }
-nav{
-display: flex;
-gap: 1rem;
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
+
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
-main {
-    padding: 1rem;
-    background-color:gray;
+
+/* Main Layout */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-header {
+    background-color: var(--primary-blue);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* Image alignment inside "About Me" */
+.bio-top {
+    display: flex;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.flag-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.flag-info img {
+    width: 120px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.last-mod {
+    color: #ffd700; /* Gold/yellow for the timestamp */
+    font-size: 0.9rem;
 }

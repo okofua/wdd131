@@ -1,0 +1,38 @@
+
+#course-title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgb(8, 8, 8);
+}
+nav a:hover{
+    color: #52bd0c;
+}
+
+h2{
+    padding: 20px;
+    background-color: rgb(14, 14, 112);
+color: rgb(228, 228, 228);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+.parent-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+     
+}
+table td {
+    padding: 5px;
+}
+footer {
+    text-align: center;
+}
